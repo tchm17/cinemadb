@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    width: 1024px; /* you can set the width of the website as per your need */
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  header nav {
+    float: right;
+  }
+  
+  header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #featured-movies {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #featured-movies ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #featured-movies ul li {
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #ccc;
+    overflow: hidden;
+  }
+  
+  #featured-movies ul li img {
+    width: 20%;
+    float: left;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 20px;
+  }
+  
+  #search-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  #search-form form {
+    margin-bottom: 0;
+  }
+  
+  #search-form form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #search-form form input[type="text"] {
+    padding: 10px;
+    width: 100%;
+  }
+  
+  #search-form form button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  

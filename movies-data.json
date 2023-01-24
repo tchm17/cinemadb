@@ -1,0 +1,41 @@
+{
+    "movies": [
+      {
+        "title": "The Shawshank Redemption",
+        "poster": "https://m.media-amazon.com/images/M/MV5BODU4MjU4NjIwNl5BMl5BanBnXkFtZTgwMDU2MjEyMDE@._V1_SX300.jpg",
+        "summary": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+        "year": 1994,
+        "director": "Frank Darabont",
+        "imdb_rating": 9.3,
+        "genres": ["Crime", "Drama"]
+      },
+      {
+        "title": "The Godfather",
+        "poster": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+        "summary": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+        "year": 1972,
+        "director": "Francis Ford Coppola",
+        "imdb_rating": 9.2,
+        "genres": ["Crime", "Drama"]
+      },
+      {
+        "title": "The Lord of the Rings: The Return of the King",
+        "poster": "https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+        "summary": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+        "year": 2003,
+        "director": "Peter Jackson",
+        "imdb_rating": 9.0,
+        "genres": ["Adventure", "Drama", "Fantasy"]
+      },
+      {
+        "title": "Inception",
+        "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
+        "summary": "A thief, who steals corporate secrets through use of dream-sharing technology, is given the inverse task of planting an idea into the mind of a CEO.",
+        "year": 2010,
+        "director": "Christopher Nolan",
+        "imdb_rating": 8.8,
+        "genres": ["Action", "Thriller", "Sci-Fi"]
+      }
+    ]
+  }
+  
