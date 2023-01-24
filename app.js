@@ -1,40 +1,37 @@
-// retrieve the JSON data
-fetch('movies-data.json')
-  .then(response => response.json())
-  .then(data => {
-    // select the ul element that will contain the movie items
-    const movieList = document.querySelector('#featured-movies ul');
+//TMDB
 
-    // loop through the movies array in the JSON data
-    data.movies.forEach(movie => {
-      // create a new li element for each movie
-      const movieItem = document.createElement('li');
+const API_KEY = 'api_key=bde1a546ffc8631ea003ee05a65ddc70';
+const BASE_URL = 'https://api.themoviedb.org/3';
+const API_URL = BASE_URL + '/trending/movie/day?' + API_KEY;
+const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 
-      // create a new h3 element for the movie title
-      const title = document.createElement('h3');
-      title.textContent = movie.title;
+const main = document.getElementById('main');
 
-      // create a new img element for the movie poster
-      const poster = document.createElement('img');
-      poster.src = movie.poster;
-      poster.alt = 'Movie Poster';
+getMovies(API_URL);
 
-      // create a new p element for the movie summary
-      const summary = document.createElement('p');
-      summary.textContent = movie.summary;
+function getMovies(url) {
 
-      // create a new a element for the "more information" link
-      const link = document.createElement('a');
-      link.href = '#';
-      link.textContent = 'More information';
+    fetch(url).then(res => res.json()).then(data => {
+      console.log(data.results);
+      showMovies(data.results);
+    })
+}
 
-      // append the title, poster, summary, and link to the movie item
-      movieItem.appendChild(title);
-      movieItem.appendChild(poster);
-      movieItem.appendChild(summary);
-      movieItem.appendChild(link);
+function showMovies(data) {
+  main.innerHTML = '';
 
-      // append the movie item to the movie list
-      movieList.appendChild(movieItem);
-    });
-  });
+  data.forEach(movie => {
+    const {title, poster_path, overview} = movie;
+    const movieEl = document.createElement('div');
+    movieEl.classList.add('movie');
+    movieEl.innerHTML = ` 
+    <h3>${title}</h3>
+    <img src="${IMG_URL + poster_path}" alt="${title}">
+    <p>${overview}</p>
+    <a href="#">More information</a>
+    `
+
+    main.appendChild(movieEl);
+  })
+
+}
