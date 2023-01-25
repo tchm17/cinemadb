@@ -28,9 +28,9 @@ function showMovies(data) {
     <img src="${IMG_URL + poster_path}" alt="${title}">
     <div class="flex-container">
     <h3>${title}</h3>
-    <p>${overview}</p>
+    <p class='overview'>${overview}</p>
     <p class='vote'>${vote_average}/10</p>
-    <a href="#"><button>Check it</button></a>
+    <a href="#"><button>See More</button></a>
     </div>
     `
 
