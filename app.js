@@ -21,14 +21,17 @@ function showMovies(data) {
   main.innerHTML = '';
 
   data.forEach(movie => {
-    const {title, poster_path, overview} = movie;
+    const {title, poster_path, overview, vote_average} = movie;
     const movieEl = document.createElement('div');
     movieEl.classList.add('movie');
     movieEl.innerHTML = ` 
-    <h3>${title}</h3>
     <img src="${IMG_URL + poster_path}" alt="${title}">
+    <div class="flex-container">
+    <h3>${title}</h3>
     <p>${overview}</p>
-    <a href="#">More information</a>
+    <p class='vote'>${vote_average}/10</p>
+    <a href="#"><button>Check it</button></a>
+    </div>
     `
 
     main.appendChild(movieEl);
