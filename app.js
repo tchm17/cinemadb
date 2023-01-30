@@ -21,7 +21,7 @@ function showMovies(data) {
   main.innerHTML = '';
 
   data.forEach(movie => {
-    const {title, poster_path, overview, vote_average} = movie;
+    const {title, poster_path, overview, vote_average,} = movie;
     const movieEl = document.createElement('div');
     movieEl.classList.add('movie');
     movieEl.innerHTML = ` 
@@ -29,7 +29,7 @@ function showMovies(data) {
     <div class="flex-container">
     <h3>${title}</h3>
     <p class='overview'>${overview}</p>
-    <p class='vote'>${vote_average}/10</p>
+    <p class='vote'>${vote_average.toFixed(1) * 10}%</p>
     <a href="#"><button>See More</button></a>
     </div>
     `
