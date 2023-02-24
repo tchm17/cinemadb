@@ -15,10 +15,10 @@ body {
     width: 1024px; /* you can set the width of the website as per your need */
   }
   
-  h3 {
+  h5 {
     font-family: 'Inter', sans-serif;
     color: --background-button-dark;
-    font-size: 20pt;
+    font-size: 12pt;
     margin: 0;
   }
 
@@ -34,6 +34,7 @@ body {
 
   header {
     color: --background-button-dark;
+    background-color: #387cfa;
     padding: 20px 0;
     align-items: center;
     justify-content: space-between;
@@ -42,8 +43,10 @@ body {
   
   header h1 {
     display: flex;
-    justify-content: center;
+    color: #fff;
+    justify-content: flex-start;
     margin: 0;
+    padding: 0 15px;
   }
   
   header nav {
@@ -66,18 +69,26 @@ body {
     text-decoration: none;
   }
   
+  .category h1 {
+    border-left:#387cfa solid; 
+    padding: 0 5px;
+  }
+
+
   #main {
-    padding-top: 40px;
+    padding-top: 10px;
     margin-bottom: 100px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
   .movie {
     display: flex;
+    flex-direction: column;
     margin: 0 0 50px 0;
     padding: 20px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    width: 200px;
   }
 
   .flex-container {
@@ -89,67 +100,20 @@ body {
 
   .vote { 
     font-family: 'Inter', sans-serif;
-    font-size: 16pt;
+    font-size: 12pt;
+    color: black;
+    margin: 10px 0 5px 0;
   }
 
   img {
-    height: 300px;
+    height: 260px;
+    width: 180px;
     border-radius: 5px;
-    object-fit: contain;
     margin: 0 20px 0 0;
   }
 
- 
-
-/* CSS */
-button {
-  background-color: #222;
-  border-radius: 4px;
-  border-style: none;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'Inter', sans-serif;
-  font-size: 12pt;
-  font-weight: 700;
-  padding: 9px 20px 8px;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-}
-
-button:hover,
-button:focus {
-  opacity: .75;
-}
-
-  .search-form {
-    background-color: #f9f9f9;
-    padding: 20px;
-  }
-  
-  .search-form form {
-    margin-bottom: 0;
-  }
-  
-  .search-form form label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  .search-form form input[type="text"] {
-    padding: 10px;
-    width: 100%;
-  }
-  
-  .search-form form button[type="submit"] {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-  }
-  
   footer {
-    background-color: #333;
+    background-color: #387cfa;
     color: #fff;
     padding: 20px;
     text-align: center;
