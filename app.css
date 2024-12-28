@@ -1,121 +1,131 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap");
 
 :root {
-  --background-button-light: #F2F2F2;
+  --background-button-light: #f2f2f2;
   --background-button-dark: #171717;
   --opacity: rgba(0, 0, 0, 0.07);
 }
 
-
-
 body {
-    font-family: 'Inter', sans-serif;
-    margin: 0 auto;
-    padding: 0;
-    width: 1024px; /* you can set the width of the website as per your need */
-  }
-  
-  h5 {
-    font-family: 'Inter', sans-serif;
-    color: --background-button-dark;
-    font-size: 12pt;
-    margin: 0;
-  }
+  font-family: "Inter", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  width: 1024px; /* Set the width of the website as per your need */
+}
 
-  .overview {
-    font-family: 'Inter', sans-serif;
-    color: rgba(0, 0, 0, 0.4);
-  }
+h5 {
+  font-family: "Inter", sans-serif;
+  color: var(--background-button-dark);
+  font-size: 12pt;
+  margin: 0;
+}
 
-  a {
-    font-family: 'Inter', sans-serif;
-    color: #fff;
-  }
+.overview {
+  font-family: "Inter", sans-serif;
+  color: rgba(0, 0, 0, 0.4);
+}
 
-  header {
-    color: --background-button-dark;
-    background-color: #387cfa;
-    padding: 20px 0;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  }
-  
-  header h1 {
-    display: flex;
-    color: #fff;
-    justify-content: flex-start;
-    margin: 0;
-    padding: 0 15px;
-  }
-  
-  header nav {
-    margin: 0 
-  }
-  
-  header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  header nav ul li {
-    display: inline-block;
-    margin-left: 20px;
-  }
-  
-  header nav ul li a {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .category h1 {
-    border-left:#387cfa solid; 
-    padding: 0 5px;
-  }
+a {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
 
+header {
+  background-color: #ff1919;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
 
-  #main {
-    padding-top: 10px;
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+header h1 {
+  color: #fff;
+  margin: 0;
+  padding: 0 15px;
+}
 
-  .movie {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 50px 0;
-    padding: 20px 0;
-    width: 200px;
-  }
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
 
-  .flex-container {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+header nav ul li {
+  margin-left: 20px;
+}
 
-  .vote { 
-    font-family: 'Inter', sans-serif;
-    font-size: 12pt;
-    color: black;
-    margin: 10px 0 5px 0;
-  }
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
 
-  img {
-    height: 260px;
-    width: 180px;
-    border-radius: 5px;
-    margin: 0 20px 0 0;
-  }
+.category h1 {
+  border-left: solid 4px #ff1919;
+  padding-left: 10px;
+}
 
-  footer {
-    background-color: #387cfa;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-  }
-  
+#main {
+  padding-top: 10px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-button-light);
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+}
+
+.flex-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vote-container {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.vote-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.vote {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+}
+
+img {
+  height: 260px;
+  width: 180px;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #ff1919;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
