@@ -33,7 +33,7 @@ function getMovies(url) {
 function showMovies(data) {
   main.innerHTML = "";
 
-  data.forEach((movie) => {
+  data.forEach((movie, index) => {
     const { title, poster_path, vote_average, id } = movie;
     const movieScore = (vote_average * 10).toFixed(0); //Convert to percentage
     const icon = getIcon(movieScore); //Get the appropriate icon
@@ -44,7 +44,7 @@ function showMovies(data) {
       IMG_URL + poster_path
     }" alt="${title}"></a>
     <div class="flex-container">
-      <h5>${title}</h5> 
+      <h5>${index + 1}. ${title}</h5> 
       <div class="vote-container">
         <img src="${icon}" alt="Icon" class="vote-icon">
     <p class='vote'>${movieScore}%</p>
